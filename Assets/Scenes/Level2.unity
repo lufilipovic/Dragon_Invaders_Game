@@ -185,11 +185,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7313967166190935992, guid: a245a929e9adb4bdf980f2bb0d59094e, type: 3}
       propertyPath: timeStep
-      value: 0.5
+      value: 0.2
       objectReference: {fileID: 0}
     - target: {fileID: 7313967166190935992, guid: a245a929e9adb4bdf980f2bb0d59094e, type: 3}
       propertyPath: moveDistance
-      value: 1
+      value: 0.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -847,11 +847,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7313967166190935992, guid: a245a929e9adb4bdf980f2bb0d59094e, type: 3}
       propertyPath: timeStep
-      value: 0.5
+      value: 0.2
       objectReference: {fileID: 0}
     - target: {fileID: 7313967166190935992, guid: a245a929e9adb4bdf980f2bb0d59094e, type: 3}
       propertyPath: moveDistance
-      value: 1
+      value: 0.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
