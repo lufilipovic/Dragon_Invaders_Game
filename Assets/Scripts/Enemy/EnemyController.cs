@@ -34,7 +34,7 @@ public class EnemyController : MonoBehaviour
             Vector3 newPos = currentPos + new Vector3(moveDistance, 0f);
             transform.position = newPos;
 
-            // If aliens group reached the right-most edge, flip their direction
+            // If enemies group reached the right-most edge, flip their direction
             if (transform.position.x >= maxPosX)
             {
                 isMovingRight = false;
@@ -47,7 +47,7 @@ public class EnemyController : MonoBehaviour
             Vector3 newPos = currentPos - new Vector3(moveDistance, 0f);
             transform.position = newPos;
 
-            // If aliens group reached the left-most edge, flip their direction
+            // If enemies group reached the left-most edge, flip their direction
             if (transform.position.x <= minPosX)
             {
                 isMovingRight = true;

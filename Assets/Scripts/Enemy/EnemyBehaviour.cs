@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -7,13 +8,18 @@ public class EnemyBehaviour : MonoBehaviour
 {
     public AudioClip destructionSFX;
 
-    //Variable to keep track of the total number of aliens
+
+    //Variable to keep track of the total number of enemies
     public static int enemiesLeft = 0;
+
+    //Variable to keep track of enemies killed
+    public static int enemiesKilled = 0;
 
     public void Start()
     {
-        // Increment the alien count when an alien is created
+        // Increment the enemy count when an enemy is created
         enemiesLeft++;
+
     }
 
     // physical sim hits. For Unity to call this, at least one of the colliding objects
@@ -33,11 +39,11 @@ public class EnemyBehaviour : MonoBehaviour
 		// indeed a player projectile
         if (collision.tag == "PlayerProjectile")
         {
-			// Play an audio clip in the scene and not attached to the alien
+			// Play an audio clip in the scene and not attached to the enemy
 			// so the sound keeps playing even after it's destroyed
             AudioSource.PlayClipAtPoint(destructionSFX, Vector3.zero);
 
-            // Destroy the alien game object
+            // Destroy the enemy game object
             Destroy(gameObject);
 
             // Destroy the projectile game object
@@ -46,15 +52,19 @@ public class EnemyBehaviour : MonoBehaviour
 
         }
 
-        // Decrement the alien count when an alien is destroyed
+        // Decrement the enemy count when an enemy is destroyed
         enemiesLeft--;
-        print(enemiesLeft);
+        print("Enemies left:" + enemiesLeft);
 
-        // Check if there are no aliens left
+        //Increment the enemy count when enemy is killed
+        enemiesKilled++;
+        print(enemiesKilled);
+
+        // Check if there are no enemies left
         if (enemiesLeft == 0)
         {
-            // All aliens are destroyed
-            print("All aliens destroyed!");
+            // All enemies are destroyed
+            print("All enemies destroyed!");
 
         }
 
