@@ -19,6 +19,8 @@ public class EnemyCount : MonoBehaviour
 
     public GameObject gameOverPanel;
 
+    public GameObject menuPanel;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -28,6 +30,7 @@ public class EnemyCount : MonoBehaviour
         restartButton.gameObject.SetActive(false);
         continueButton.gameObject.SetActive(false);
         exitButton.gameObject.SetActive(false);
+        menuPanel.gameObject.SetActive(false);
     }
 
     // Update is called once per frame
@@ -41,6 +44,12 @@ public class EnemyCount : MonoBehaviour
         if (EnemyBehaviour.enemiesKilled > 0 && EnemyBehaviour.enemiesLeft == 0)
         {
             winGame();
+        }
+
+        // Check if the Escape key is pressed
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            menuPanel.gameObject.SetActive(true);
         }
 
     }
@@ -60,6 +69,7 @@ public class EnemyCount : MonoBehaviour
     public void restartGame()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        EnemyBehaviour.enemiesLeft = 0;
     }
 
     //load the next scene from the build
@@ -72,6 +82,8 @@ public class EnemyCount : MonoBehaviour
     public void startScreen()
     {
         SceneManager.LoadScene(0);
+        EnemyBehaviour.enemiesLeft = 0;
+        EnemyBehaviour.enemiesKilled = 0;
     }
 
 
@@ -79,5 +91,7 @@ public class EnemyCount : MonoBehaviour
     public void goBackScreen()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
+        EnemyBehaviour.enemiesKilled = 0;
+        EnemyBehaviour.enemiesLeft = 0;
     }
 }
