@@ -9,6 +9,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Menu.unity
     guid: 3d652a6d6e2014622b67388d478a75af
   - enabled: 1
-    path: Assets/Scenes/SpaceInvaders.unity
+    path: Assets/Scenes/DragonInvader.unity
     guid: 4ddb475e772d40d47b15c36466e70a08
+  - enabled: 1
+    path: Assets/Scenes/Level2.unity
+    guid: 15550ab6b9a8d4ae79514a3959287cc3
   m_configObjects: {}
