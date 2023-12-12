@@ -7,10 +7,11 @@ public class Shooter : MonoBehaviour
     // reference to the original prefab to instatiate
     public GameObject projectilePrefab;
 
+    public GameObject player;
+
     // Start is called before the first frame update
     void Start()
     {
-        
     }
 
     // Update is called once per frame
@@ -19,6 +20,7 @@ public class Shooter : MonoBehaviour
         if (Input.GetButtonDown("Jump"))
         {
             Shoot();
+
         }
     }
 
@@ -26,6 +28,7 @@ public class Shooter : MonoBehaviour
     {
         // We instantiate the prefab at the same position as the player,
         // since this script is on the player GameObject
-        Instantiate(projectilePrefab, transform.position, Quaternion.identity);
+        GameObject projectile = Instantiate(projectilePrefab, transform.position, Quaternion.identity);
+
     }
 }

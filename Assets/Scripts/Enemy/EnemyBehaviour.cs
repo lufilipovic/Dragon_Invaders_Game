@@ -17,8 +17,6 @@ public class EnemyBehaviour : MonoBehaviour
 
     public void Start()
     {
-        // Increment the enemy count when an enemy is created
-        enemiesLeft++;
 
     }
 
@@ -52,22 +50,27 @@ public class EnemyBehaviour : MonoBehaviour
 
         }
 
-        // Decrement the enemy count when an enemy is destroyed
+    }
+
+    public void OnEnable()
+    {
+        // Increment the enemy count when an enemy is created
+        enemiesLeft++;
+    }
+
+    public void OnDisable()
+    {
+        // Decrement the enemy count when an enemy is killed
         enemiesLeft--;
-        print("Enemies left:" + enemiesLeft);
 
-        //Increment the enemy count when enemy is killed
+        // Increment the enemy count when an enemy is killed
         enemiesKilled++;
-        print(enemiesKilled);
 
-        // Check if there are no enemies left
         if (enemiesLeft == 0)
         {
             // All enemies are destroyed
-            print("All enemies destroyed!");
-
+            Debug.Log("All enemies destroyed!");
         }
-
     }
 
 }

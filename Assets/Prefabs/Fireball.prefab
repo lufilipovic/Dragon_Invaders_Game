@@ -10,13 +10,12 @@ GameObject:
   m_Component:
   - component: {fileID: 7126286630849343664}
   - component: {fileID: 7126286630849343667}
-  - component: {fileID: 7476504748382308131}
   - component: {fileID: 8264720200388938045}
   - component: {fileID: -6165978374507034617}
   - component: {fileID: 2054606538598449363}
-  m_Layer: 3
-  m_Name: Projectile
-  m_TagString: PlayerProjectile
+  m_Layer: 7
+  m_Name: Fireball
+  m_TagString: EnemyProjectile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -77,7 +76,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: 21300000, guid: 81896055b8e2f463599522f1da8468b2, type: 3}
+  m_Sprite: {fileID: 21300000, guid: b178da631a54c4c5bb9980c5b0b0337f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -88,21 +87,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &7476504748382308131
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7126286630849343666}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 445aebb8f3bbc41498764aa8692e7a86, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  moveSpeed: 5
-  destroyAfter: 3
-  verticalValue: 1
 --- !u!58 &8264720200388938045
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -146,7 +130,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7126286630849343666}
-  m_BodyType: 1
+  m_BodyType: 0
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
@@ -175,7 +159,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 70ab9991ebea543679a089b8e399b518, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 5b11b6e2157d248c18870de87b91b684, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 0.654
   m_Pitch: 1
