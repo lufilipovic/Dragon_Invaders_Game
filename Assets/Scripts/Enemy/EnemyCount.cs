@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -13,9 +11,9 @@ public class EnemyCount : MonoBehaviour
 
     public TMP_Text displayText;
 
-    public Button restartButton;
-    public Button continueButton;
-    public Button exitButton;
+    //public Button restartButton;
+    //public Button continueButton;
+    //public Button exitButton;
 
     public GameObject gameOverPanel;
 
@@ -27,12 +25,9 @@ public class EnemyCount : MonoBehaviour
     void Start()
     {
         //remove objects at start
-        gameOverPanel.gameObject.SetActive(false);
+        gameOverPanel.SetActive(false);
         displayText.gameObject.SetActive(false);
-        restartButton.gameObject.SetActive(false);
-        continueButton.gameObject.SetActive(false);
-        exitButton.gameObject.SetActive(false);
-        menuPanel.gameObject.SetActive(false);
+        menuPanel.SetActive(false);
     }
 
     // Update is called once per frame
@@ -45,66 +40,59 @@ public class EnemyCount : MonoBehaviour
         if (player == null)
         {
             displayText.text = "You lose!";
-            winGame();
+            WinGame();
         }
         //check if the player killed all enemies
         else if (EnemyBehaviour.enemiesKilled > 0 && EnemyBehaviour.enemiesLeft == 0)
         {
             displayText.text = "You win dragon slayer!";
-            winGame();
+            WinGame();
         }
 
         // Check if the Escape key is pressed
         else if (Input.GetKeyDown(KeyCode.Escape))
         {
-            menuPanel.gameObject.SetActive(true);
+            menuPanel.SetActive(true);
         }
 
     }
 
     //show objects on call of the method
-    public void winGame()
+    public void WinGame()
     {
-        gameOverPanel.gameObject.SetActive(true);
+        gameOverPanel.SetActive(true);
         displayText.gameObject.SetActive(true);
-        restartButton.gameObject.SetActive(true);
-        continueButton.gameObject.SetActive(true);
-        exitButton.gameObject.SetActive(true);
-
     }
 
     //reload the current scene
-    public void restartGame()
+    public void RestartGame()
     {
 
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        Time.timeScale = 1f;
         print(player);
     }
 
     //load the next scene from the build
-    public void continueGame()
+    public void ContinueGame()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 
     //load first scene from the build
-    public void startScreen()
+    public void StartScreen()
     {
         SceneManager.LoadScene(0);
-        EnemyBehaviour.enemiesLeft = 0;
-        EnemyBehaviour.enemiesKilled = 0;
-
+        Time.timeScale = 1f;
     }
 
 
     //load the previous scene from the build
-    public void goBackScreen()
+    public void GoBackScreen()
     {
 
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
-        EnemyBehaviour.enemiesKilled = 0;
-        EnemyBehaviour.enemiesLeft = 0;
-
+        Time.timeScale = 1f;
 
     }
 

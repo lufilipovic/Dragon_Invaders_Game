@@ -20,7 +20,6 @@ public class Shooter : MonoBehaviour
         if (Input.GetButtonDown("Jump"))
         {
             Shoot();
-            //Physics2D.IgnoreCollision(GetComponent<Collider2D>(), player.GetComponent<Collider2D>());
 
         }
     }
