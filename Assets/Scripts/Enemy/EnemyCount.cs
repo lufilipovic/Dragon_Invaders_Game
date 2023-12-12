@@ -76,8 +76,9 @@ public class EnemyCount : MonoBehaviour
     //reload the current scene
     public void restartGame()
     {
+
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-        EnemyBehaviour.enemiesLeft = 0;
+        print(player);
     }
 
     //load the next scene from the build
@@ -92,14 +93,19 @@ public class EnemyCount : MonoBehaviour
         SceneManager.LoadScene(0);
         EnemyBehaviour.enemiesLeft = 0;
         EnemyBehaviour.enemiesKilled = 0;
+
     }
 
 
     //load the previous scene from the build
     public void goBackScreen()
     {
+
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
         EnemyBehaviour.enemiesKilled = 0;
         EnemyBehaviour.enemiesLeft = 0;
+
+
     }
+
 }
