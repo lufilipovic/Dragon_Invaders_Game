@@ -11,7 +11,7 @@ public class EnemyCount : MonoBehaviour
     public TMP_Text enemyLeftText;
     public TMP_Text enemyKilledText;
 
-    public TMP_Text winningText;
+    public TMP_Text displayText;
 
     public Button restartButton;
     public Button continueButton;
@@ -21,12 +21,14 @@ public class EnemyCount : MonoBehaviour
 
     public GameObject menuPanel;
 
+    public GameObject player;
+
     // Start is called before the first frame update
     void Start()
     {
         //remove objects at start
         gameOverPanel.gameObject.SetActive(false);
-        winningText.gameObject.SetActive(false);
+        displayText.gameObject.SetActive(false);
         restartButton.gameObject.SetActive(false);
         continueButton.gameObject.SetActive(false);
         exitButton.gameObject.SetActive(false);
@@ -40,14 +42,20 @@ public class EnemyCount : MonoBehaviour
         enemyLeftText.text = "Enemies Left: " + EnemyBehaviour.enemiesLeft.ToString();
         enemyKilledText.text = "Enemies Killed: " + EnemyBehaviour.enemiesKilled.ToString();
 
-        //check if the player killed all enemies
-        if (EnemyBehaviour.enemiesKilled > 0 && EnemyBehaviour.enemiesLeft == 0)
+        if (player == null)
         {
+            displayText.text = "You lose!";
+            winGame();
+        }
+        //check if the player killed all enemies
+        else if (EnemyBehaviour.enemiesKilled > 0 && EnemyBehaviour.enemiesLeft == 0)
+        {
+            displayText.text = "You win dragon slayer!";
             winGame();
         }
 
         // Check if the Escape key is pressed
-        if (Input.GetKeyDown(KeyCode.Escape))
+        else if (Input.GetKeyDown(KeyCode.Escape))
         {
             menuPanel.gameObject.SetActive(true);
         }
@@ -58,7 +66,7 @@ public class EnemyCount : MonoBehaviour
     public void winGame()
     {
         gameOverPanel.gameObject.SetActive(true);
-        winningText.gameObject.SetActive(true);
+        displayText.gameObject.SetActive(true);
         restartButton.gameObject.SetActive(true);
         continueButton.gameObject.SetActive(true);
         exitButton.gameObject.SetActive(true);

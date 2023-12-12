@@ -1219,12 +1219,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyLeftText: {fileID: 1245810760}
   enemyKilledText: {fileID: 1945821699}
-  winningText: {fileID: 2022502945}
+  displayText: {fileID: 2022502945}
   restartButton: {fileID: 1244795032}
   continueButton: {fileID: 1602392572}
   exitButton: {fileID: 1064357462}
   gameOverPanel: {fileID: 263154423}
   menuPanel: {fileID: 1870834174}
+  player: {fileID: 786364167}
 --- !u!114 &727806965
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1469,6 +1470,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a245a929e9adb4bdf980f2bb0d59094e, type: 3}
+--- !u!1 &786364167 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8282605717347492442, guid: 390ecafa345db6d4a90ed799ee01b656, type: 3}
+  m_PrefabInstance: {fileID: 1956251096}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1025498468
 GameObject:
   m_ObjectHideFlags: 0
@@ -3040,7 +3046,7 @@ GameObject:
   - component: {fileID: 2022502946}
   - component: {fileID: 2022502945}
   m_Layer: 5
-  m_Name: Win Text
+  m_Name: Display Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3066,7 +3072,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: You win dragon slayer!
+  m_text: 'display text
+
+'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}

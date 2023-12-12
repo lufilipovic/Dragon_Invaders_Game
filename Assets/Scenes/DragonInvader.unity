@@ -200,6 +200,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3d4f7277b58d1804693a9b771da66628, type: 3}
+--- !u!1 &616272920 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8282605717347492442, guid: 390ecafa345db6d4a90ed799ee01b656, type: 3}
+  m_PrefabInstance: {fileID: 8282605717086475198}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &640685674
 GameObject:
   m_ObjectHideFlags: 0
@@ -2191,12 +2196,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyLeftText: {fileID: 1853985458}
   enemyKilledText: {fileID: 700140604}
-  winningText: {fileID: 1991075082}
+  displayText: {fileID: 1991075082}
   restartButton: {fileID: 1019449476}
   continueButton: {fileID: 1282524618}
   exitButton: {fileID: 1025680545}
   gameOverPanel: {fileID: 989108877}
   menuPanel: {fileID: 1169062651}
+  player: {fileID: 616272920}
 --- !u!1 &1683414933
 GameObject:
   m_ObjectHideFlags: 0
@@ -2896,7 +2902,7 @@ GameObject:
   - component: {fileID: 1991075083}
   - component: {fileID: 1991075082}
   m_Layer: 5
-  m_Name: Win Text
+  m_Name: Display Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
