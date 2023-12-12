@@ -123,79 +123,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1001 &17996878
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 2369062776193324066, guid: a245a929e9adb4bdf980f2bb0d59094e, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2369062776193324066, guid: a245a929e9adb4bdf980f2bb0d59094e, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 3.61
-      objectReference: {fileID: 0}
-    - target: {fileID: 2369062776193324066, guid: a245a929e9adb4bdf980f2bb0d59094e, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2369062776193324066, guid: a245a929e9adb4bdf980f2bb0d59094e, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2369062776193324066, guid: a245a929e9adb4bdf980f2bb0d59094e, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2369062776193324066, guid: a245a929e9adb4bdf980f2bb0d59094e, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2369062776193324066, guid: a245a929e9adb4bdf980f2bb0d59094e, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2369062776193324066, guid: a245a929e9adb4bdf980f2bb0d59094e, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2369062776193324066, guid: a245a929e9adb4bdf980f2bb0d59094e, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2369062776193324066, guid: a245a929e9adb4bdf980f2bb0d59094e, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2369062776193324076, guid: a245a929e9adb4bdf980f2bb0d59094e, type: 3}
-      propertyPath: m_Name
-      value: Pink Enemy Group Top
-      objectReference: {fileID: 0}
-    - target: {fileID: 7313967166190935992, guid: a245a929e9adb4bdf980f2bb0d59094e, type: 3}
-      propertyPath: maxPosX
-      value: 1.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 7313967166190935992, guid: a245a929e9adb4bdf980f2bb0d59094e, type: 3}
-      propertyPath: minPosX
-      value: -1.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 7313967166190935992, guid: a245a929e9adb4bdf980f2bb0d59094e, type: 3}
-      propertyPath: timeStep
-      value: 0.2
-      objectReference: {fileID: 0}
-    - target: {fileID: 7313967166190935992, guid: a245a929e9adb4bdf980f2bb0d59094e, type: 3}
-      propertyPath: moveDistance
-      value: 0.5
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: a245a929e9adb4bdf980f2bb0d59094e, type: 3}
 --- !u!1 &18986594
 GameObject:
   m_ObjectHideFlags: 0
@@ -865,6 +792,79 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 367510870}
   m_CullTransparentMesh: 1
+--- !u!1001 &369841393
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2369062776193324066, guid: a245a929e9adb4bdf980f2bb0d59094e, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2369062776193324066, guid: a245a929e9adb4bdf980f2bb0d59094e, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 3.61
+      objectReference: {fileID: 0}
+    - target: {fileID: 2369062776193324066, guid: a245a929e9adb4bdf980f2bb0d59094e, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2369062776193324066, guid: a245a929e9adb4bdf980f2bb0d59094e, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2369062776193324066, guid: a245a929e9adb4bdf980f2bb0d59094e, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2369062776193324066, guid: a245a929e9adb4bdf980f2bb0d59094e, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2369062776193324066, guid: a245a929e9adb4bdf980f2bb0d59094e, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2369062776193324066, guid: a245a929e9adb4bdf980f2bb0d59094e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2369062776193324066, guid: a245a929e9adb4bdf980f2bb0d59094e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2369062776193324066, guid: a245a929e9adb4bdf980f2bb0d59094e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2369062776193324076, guid: a245a929e9adb4bdf980f2bb0d59094e, type: 3}
+      propertyPath: m_Name
+      value: Pink Enemy Top
+      objectReference: {fileID: 0}
+    - target: {fileID: 7313967166190935992, guid: a245a929e9adb4bdf980f2bb0d59094e, type: 3}
+      propertyPath: maxPosX
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7313967166190935992, guid: a245a929e9adb4bdf980f2bb0d59094e, type: 3}
+      propertyPath: minPosX
+      value: -1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7313967166190935992, guid: a245a929e9adb4bdf980f2bb0d59094e, type: 3}
+      propertyPath: timeStep
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7313967166190935992, guid: a245a929e9adb4bdf980f2bb0d59094e, type: 3}
+      propertyPath: moveDistance
+      value: 0.5
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: a245a929e9adb4bdf980f2bb0d59094e, type: 3}
 --- !u!1 &648153151
 GameObject:
   m_ObjectHideFlags: 0
@@ -1090,6 +1090,79 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 709298953}
   m_CullTransparentMesh: 1
+--- !u!1001 &723829857
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2369062776193324066, guid: a245a929e9adb4bdf980f2bb0d59094e, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2369062776193324066, guid: a245a929e9adb4bdf980f2bb0d59094e, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2.49
+      objectReference: {fileID: 0}
+    - target: {fileID: 2369062776193324066, guid: a245a929e9adb4bdf980f2bb0d59094e, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2369062776193324066, guid: a245a929e9adb4bdf980f2bb0d59094e, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2369062776193324066, guid: a245a929e9adb4bdf980f2bb0d59094e, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2369062776193324066, guid: a245a929e9adb4bdf980f2bb0d59094e, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2369062776193324066, guid: a245a929e9adb4bdf980f2bb0d59094e, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2369062776193324066, guid: a245a929e9adb4bdf980f2bb0d59094e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2369062776193324066, guid: a245a929e9adb4bdf980f2bb0d59094e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2369062776193324066, guid: a245a929e9adb4bdf980f2bb0d59094e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2369062776193324076, guid: a245a929e9adb4bdf980f2bb0d59094e, type: 3}
+      propertyPath: m_Name
+      value: Pink Enemy Mid
+      objectReference: {fileID: 0}
+    - target: {fileID: 7313967166190935992, guid: a245a929e9adb4bdf980f2bb0d59094e, type: 3}
+      propertyPath: maxPosX
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7313967166190935992, guid: a245a929e9adb4bdf980f2bb0d59094e, type: 3}
+      propertyPath: minPosX
+      value: -1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7313967166190935992, guid: a245a929e9adb4bdf980f2bb0d59094e, type: 3}
+      propertyPath: timeStep
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7313967166190935992, guid: a245a929e9adb4bdf980f2bb0d59094e, type: 3}
+      propertyPath: moveDistance
+      value: 0.5
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: a245a929e9adb4bdf980f2bb0d59094e, type: 3}
 --- !u!1 &727806962
 GameObject:
   m_ObjectHideFlags: 0
@@ -1323,7 +1396,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 741717473}
   m_CullTransparentMesh: 1
---- !u!1001 &887707137
+--- !u!1001 &778603397
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -1373,7 +1446,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2369062776193324076, guid: a245a929e9adb4bdf980f2bb0d59094e, type: 3}
       propertyPath: m_Name
-      value: Pink Enemy Group Bot
+      value: Pink Enemy Bot
       objectReference: {fileID: 0}
     - target: {fileID: 7313967166190935992, guid: a245a929e9adb4bdf980f2bb0d59094e, type: 3}
       propertyPath: maxPosX
@@ -2329,79 +2402,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1301206425}
   m_CullTransparentMesh: 1
---- !u!1001 &1347073044
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 2369062776193324066, guid: a245a929e9adb4bdf980f2bb0d59094e, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2369062776193324066, guid: a245a929e9adb4bdf980f2bb0d59094e, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 2.49
-      objectReference: {fileID: 0}
-    - target: {fileID: 2369062776193324066, guid: a245a929e9adb4bdf980f2bb0d59094e, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2369062776193324066, guid: a245a929e9adb4bdf980f2bb0d59094e, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2369062776193324066, guid: a245a929e9adb4bdf980f2bb0d59094e, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2369062776193324066, guid: a245a929e9adb4bdf980f2bb0d59094e, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2369062776193324066, guid: a245a929e9adb4bdf980f2bb0d59094e, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2369062776193324066, guid: a245a929e9adb4bdf980f2bb0d59094e, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2369062776193324066, guid: a245a929e9adb4bdf980f2bb0d59094e, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2369062776193324066, guid: a245a929e9adb4bdf980f2bb0d59094e, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2369062776193324076, guid: a245a929e9adb4bdf980f2bb0d59094e, type: 3}
-      propertyPath: m_Name
-      value: Pink Enemy Group Mid
-      objectReference: {fileID: 0}
-    - target: {fileID: 7313967166190935992, guid: a245a929e9adb4bdf980f2bb0d59094e, type: 3}
-      propertyPath: maxPosX
-      value: 1.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 7313967166190935992, guid: a245a929e9adb4bdf980f2bb0d59094e, type: 3}
-      propertyPath: minPosX
-      value: -1.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 7313967166190935992, guid: a245a929e9adb4bdf980f2bb0d59094e, type: 3}
-      propertyPath: timeStep
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 7313967166190935992, guid: a245a929e9adb4bdf980f2bb0d59094e, type: 3}
-      propertyPath: moveDistance
-      value: 1
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: a245a929e9adb4bdf980f2bb0d59094e, type: 3}
 --- !u!1 &1353411281
 GameObject:
   m_ObjectHideFlags: 0
@@ -3015,6 +3015,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 8282605717347492442, guid: 390ecafa345db6d4a90ed799ee01b656, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 8282605717347492442, guid: 390ecafa345db6d4a90ed799ee01b656, type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3160,9 +3168,9 @@ SceneRoots:
   m_Roots:
   - {fileID: 648153154}
   - {fileID: 1956251096}
-  - {fileID: 17996878}
-  - {fileID: 1347073044}
-  - {fileID: 887707137}
+  - {fileID: 369841393}
+  - {fileID: 723829857}
+  - {fileID: 778603397}
   - {fileID: 339003146}
   - {fileID: 45246838}
   - {fileID: 1089338415}
