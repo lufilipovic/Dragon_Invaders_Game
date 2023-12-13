@@ -56,6 +56,7 @@ public class EnemyCount : MonoBehaviour
     {
         gameOverPanel.SetActive(true);
         displayText.gameObject.SetActive(true);
+        DestroyProjectiles();
     }
 
     //reload the current scene
@@ -88,6 +89,17 @@ public class EnemyCount : MonoBehaviour
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
         Time.timeScale = 1f;
 
+    }
+
+    public void DestroyProjectiles()
+    {
+        // Find all active projectiles in the scene and destroy them
+        GameObject[] projectiles = GameObject.FindGameObjectsWithTag("EnemyProjectile");
+
+        foreach (GameObject projectile in projectiles)
+        {
+            Destroy(projectile);
+        }
     }
 
 }
