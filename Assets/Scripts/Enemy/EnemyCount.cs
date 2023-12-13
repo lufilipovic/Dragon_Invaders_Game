@@ -46,7 +46,8 @@ public class EnemyCount : MonoBehaviour
         // Check if the Escape key is pressed
         else if (Input.GetKeyDown(KeyCode.Escape))
         {
-            menuPanel.SetActive(true);
+            //toggle the menu panels active state 
+            menuPanel.SetActive(!menuPanel.activeSelf);
         }
 
     }
