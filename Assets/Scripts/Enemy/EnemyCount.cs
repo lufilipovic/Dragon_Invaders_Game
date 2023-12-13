@@ -7,13 +7,8 @@ public class EnemyCount : MonoBehaviour
 {
 
     public TMP_Text enemyLeftText;
-    public TMP_Text enemyKilledText;
 
     public TMP_Text displayText;
-
-    //public Button restartButton;
-    //public Button continueButton;
-    //public Button exitButton;
 
     public GameObject gameOverPanel;
 
@@ -35,7 +30,6 @@ public class EnemyCount : MonoBehaviour
     {
         //setting text to number of enemies
         enemyLeftText.text = "Enemies Left: " + EnemyBehaviour.enemiesLeft.ToString();
-        enemyKilledText.text = "Enemies Killed: " + EnemyBehaviour.enemiesKilled.ToString();
 
         if (player == null)
         {
